@@ -1,0 +1,30 @@
+p{
+    color: blue;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+h1{
+    color: orange;
+}
+
+.tag1 {
+    color: purple;
+}
+
+#tag2 {
+    color: aqua
+}
+
+h2 {
+    color:black;
+    border: 10px solid red;
+    padding: 15px;
+    background-color: yellow;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
