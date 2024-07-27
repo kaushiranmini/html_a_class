@@ -1,118 +1,175 @@
+<!DOCTYPE html>
 <html>
-  <head><h1>Welcome to Forms!!!</h1></head>
-  <body bgcolor="pink" align="center">
-    <from>
-     <!--Simple Text Area-->
-     <label>Name:</label>
-     <input type="text" placeholder="Enter Your Name" >
-     <br><br>
-     
-     
-      <!--For Password-->
-      <label>Enter Password:</label>
-      <input type="password" placeholder="Password">
-      <br><br>
+<head>
+    <title>Welcome To Form!!!</title>
+    <style>
+        /* CSS code goes here */
+        body {
+            background-color: pink;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
 
+        form {
+            display: inline-block;
+            text-align: left;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
 
-      <!--Can Tick Only One Of The Options-->
-      <label>Gender:</label>
-      <input type="radio" name="g1" value="1">Male
-      <input type="radio" name="g1" value="2">Female
-      <br><br>
-    
+        label {
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
 
-      <!--For Phone Number-->
-      <label>Ph No:</label>
-      <input type="tel" pattern="[6-9]{1}[0-9]{9}" placeholder="Ph.No">
-      <br><br>
+        input[type="text"],
+        input[type="password"],
+        input[type="tel"],
+        input[type="date"],
+        input[type="time"],
+        input[type="color"],
+        input[type="email"],
+        input[type="number"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
 
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
 
-      <!--Set Date-->
-      <label>When Is Your Birthday</label>
-      <input type="date"><br><br>
+        input[type="file"] {
+            margin-top: 5px;
+        }
 
+        input[type="range"] {
+            width: 100%;
+            margin-bottom: 10px;
+        }
 
-      <!--To Set Time-->
-      <label>When Do you Drink Tea</label>
-      <input type="time"><br><br>
+        button[type="submit"],
+        button[type="reset"] {
+            width: 48%;
+            padding: 10px;
+            margin-top: 10px;
+            margin-right: 1%;
+            border: none;
+            border-radius: 5px;
+            background-color: #007BFF;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
 
+        button[type="reset"] {
+            background-color: #dc3545;
+        }
 
-      <!--Set colour-->
-      <label>Whats Your favourite colour</label>
-      <input type="color"><br><br>
+        button[type="submit"]:hover,
+        button[type="reset"]:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome To Form!!!</h1>
+    <form>
+        <!--Simple Text Area-->
+        <label>Name:</label>
+        <input type="text" placeholder="Enter Your Name">
+        <br><br>
 
+        <!--For Password-->
+        <label>Enter Password:</label>
+        <input type="password" placeholder="password"><br><br>
 
-      <!--Prebuilt With Format Of Email-->
-      <label>Email:</label>
-      <input type="Email" placeholder="Email"><br><br>
+        <!--Can tick only one of the options-->
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="Male">Male
+        <input type="radio" name="gender" value="Female">Female
+        <br><br>
 
+        <!--For Phone Number-->
+        <label>Ph No:</label>
+        <input type="tel" pattern="[6-9]{1}[0-9]{9}" placeholder="Ph-No">
+        <br><br>
 
-      <!--Used To Show Progress Can Be Made Realtime-->
-      <label>Progress</label>
-      <progress value="10" max="100"></progress>40%<br><br>
-      <br><br>
+        <!-- Set Date-->
+       <label>When Is Your Birthday:</label>
+        <input type="date"><br><br>-->
 
+        <!--Set Time-->
+        <!--<label>When Do You Drink Tea:</label>
+        <input type="time"><br><br> -->
 
-      <!--To upload Docs-->
-      <label>Upload Your Photo</label>
-      <input type="File" accept="image/*">
-      <br><br>
+        <!--Set Colour-->
+       <!-- <label>What's your favorite Colour:</label>
+        <input type="color"><br><br>-->
 
+        <!--Prebuilt with format of email-->
+        <label>Email:</label>
+        <input type="email" placeholder="Email"><br><br>
 
-      <!--Can Tick Multiple Boxes-->
-      <label>What Web Browser Do You Use:</label>
-      <input type="Checkbox" name="g2" value="1">Microsoft Edge
-      <input type="Checkbox" name="g2" value="2">Google
-      <br><br>
+        <!--Upload File-->
+       <!-- <label>Upload File:</label>
+        <input type="file" accept="image/*">
+        <br><br>-->
 
+        <!--Can tick multiple boxes-->
+        <!-- <label>What web Browser do you use:</label>
+        <input type="checkbox" name="browser" value="Edge">Microsoft Edge
+        <input type="checkbox" name="browser" value="Google">Google
+        <br><br> -->
 
-      <!--Can Select One Of The Multiple Options-->
-      <labelL>Favourite Fruit</labelL>
-      <select>
-         <option value="App">Apple</option>
-         <option value="Man">Mango</option>
-         <option value="Wml" selected>Watermelon</option>
-      </select>
-      <br><br>
+        <!--Can Select of the multiple option-->
+       <!-- <label>Favourite Fruit:</label>
+        <select>
+            <option value="App">Apple</option>
+            <option value="Man">Mango</option>
+            <option value="Wat" selected>Watermelon</option>
+        </select>
+        <br><br>-->
 
+        <!--Can select Multiple Options-->
+        <!-- <label>What Language do you know:</label>
+        <select multiple>
+            <option value="c">C</option>
+            <option value="cpp">C++</option>
+            <option value="Python">Python</option>
+            <option value="Java">Java</option>
+        </select>
+        <br><br> -->
 
-      <!--Can Select Multiple Options-->
-      <label>What Languages Do You Know:</label>
-      <select multiple>
-         <option value="C">C</option>
-         <option value="CPP">C++</option>
-         <option value="Python">Python</option>
-         <option value="Java">Java</option>
-         <option value="html">Html</Html></option>
-         <select>
-      <br><br>
-      
+        <!--Gives a textbox to set numbers only-->
+        <!-- <label>Movie Rating (out of 10):</label>
+        <input type="number" min="0" max="10">
+        <br><br> -->
 
-      <!--Gives a Textbox To Set Numbers Only-->
-      <label>Movie Ratting (off 10):</label>
-      <input type="number" min="0" max="9">
-      <br><br>
+        <!--Gives a text area of desired size-->
+        <!-- <label>Enter a Review:</label>
+        <textarea cols="30" rows="10" placeholder="Write a Review"></textarea>
+        <br><br> -->
 
+        <!--Step uses skipping and value gives the position of range scroller-->
+        <!-- <label>How do you like the Service:</label>
+        <input type="range" min="0" max="5" step="1" value="0">
+        <br><br> -->
 
-      <!--Gives a Text Area Of Desired Size-->
-      <label>Enter a Review</label>
-      <textarea cols="50" rows="10" placeholder="Write A Review"></textarea>
-      <br><br>
-
-
-      <!--Step Uses Skipping And Value Gives The Position Of Range Scoller-->
-      <label>How Do You Like The Service:</label>
-      <input type="Range" min="0" max="5" step="1" value="0">
-      <br><br>
-
-
-      <!--These Below Two Are Inbuilt-->
-      <button type="Submit">Submit</button>
-      <button type="Rest">Rest</button>
-      <br><br>
-
-
-      
-     </from>
+        <!--These below two are inbuilt-->
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        <br><br>
+    </form>
 </body>
 </html>
